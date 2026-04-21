@@ -100,10 +100,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp Q       &kp W       &kp E        &kp R        &kp T            &kp Y        &kp U        &kp I         &kp O       &kp P
-                  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G            &kp H        &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
-&kp LEFT_CONTROL  &kp Z       &kp X       &kp C        &kp V        &kp B            &kp N        &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
-                                          &kp ESCAPE   &kp TAB      &lt NAV SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
+                  &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y        &kp U        &kp I         &kp O       &kp P
+                  &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G          &kp H        &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
+&kp LEFT_CONTROL  &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N        &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
+                                          &kp ESCAPE   &kp TAB      &lt 4 SPACE    &lt SYM RET  &kp BSPC     &kp LEFT_ALT
             >;
         };
 
@@ -178,10 +178,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &sys_reset    &trans        &out OUT_TOG  &trans        &trans            &trans              &kp F7  &kp F8  &kp F9  &kp F12
-              &bootloader   &trans        &trans        &trans        &bt BT_CLR        &trans              &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &kp LS(LEFT_SHIFT)  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                          &trans        &trans        &trans            &trans              &trans  &trans
+              &sys_reset    &trans        &out OUT_TOG  &trans        &trans            &trans          &kp F7  &kp F8  &kp F9  &kp F12
+              &bootloader   &trans        &trans        &trans        &bt BT_CLR        &trans          &kp F4  &kp F5  &kp F6  &kp F11
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                                          &trans        &trans        &trans            &trans          &trans  &trans
+            >;
+        };
+
+        num_layer {
+            label = "NUM";
+            bindings = <
+           &kp EQUAL      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &braces      &kp PRINTSCREEN  &kp HOME        &kp INSERT    &kp END          &kp C_VOLUME_UP
+           &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &brackets    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
+&kp GRAVE  &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &partness    &kp LEFT_SHIFT   &kp PAGE_DOWN   &kp CAPSLOCK  &kp PAGE_UP      &kp C_MUTE         &kp RA(F4)
+                                        &kp NUMBER_0  &trans        &trans       &mo ADJ          &kp DELETE      &kp ESCAPE
             >;
         };
     };
