@@ -101,10 +101,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y      &kp U        &kp I         &kp O       &kp P
-        &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G          &kp H      &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
-&tog 6  &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
-                                &kp ESCAPE   &kp TAB      &lt 4 SPACE    &lt 5 RET  &kp BSPC     &kp LEFT_ALT
+        &kp Q  &kp W       &kp E           &kp R        &kp T          &kp Y      &kp U        &kp I         &kp O       &kp P
+        &kp A  &mt LALT S  &mt LCTRL D     &mt LSHFT F  &kp G          &kp H      &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
+&tog 6  &kp Z  &kp X       &kp C           &kp V        &kp B          &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
+                           &kp LEFT_SHIFT  &kp TAB      &lt 4 SPACE    &lt 5 RET  &kp BSPC     &kp LEFT_ALT
             >;
         };
 
@@ -208,10 +208,10 @@
 
         GENSHIN {
             bindings = <
-       &kp ESCAPE  &trans  &kp W  &kp NUMBER_1  &kp NUMBER_2    &kp Y   &kp U   &kp I      &kp O    &kp P
-       &trans      &kp A   &kp S  &kp D         &kp NUMBER_3    &kp H   &kp J   &kp K      &kp L    &kp SEMI
-&to 0  &trans      &trans  &kp C  &trans        &kp NUMBER_4    &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                           &kp B  &kp M         &kp F           &trans  &trans  &trans
+       &kp Q   &kp E  &kp W       &kp NUMBER_1  &kp NUMBER_2    &kp Y   &kp U   &kp I      &kp O    &kp P
+       &trans  &kp A  &kp S       &kp D         &kp NUMBER_3    &kp H   &kp J   &kp K      &kp L    &kp SEMI
+&to 0  &trans  &kp C  &kp B       &kp V         &kp NUMBER_4    &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &kp ESCAPE  &kp M         &kp F           &trans  &trans  &trans
             >;
         };
 
