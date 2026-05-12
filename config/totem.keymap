@@ -130,10 +130,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp ESC    &kp HOME   &kp UP    &kp END    &braces      &kp C_VOLUME_UP    &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-            &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &brackets    &kp C_VOLUME_DOWN  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&caps_word  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &partness    &kp LEFT_SHIFT     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp GRAVE
-                                  &trans    &trans     &trans       &mo 4              &kp DELETE    &kp N0
+       &none  &kp LC(PLUS)     &none               &kp LC(MINUS)      &kp LC(SPACE)          &kp PRINTSCREEN  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
+       &none  &kp LG(LEFT)     &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)   &kp LG(RIGHT_ARROW)    &none            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
+&none  &none  &kp LC(PAGE_UP)  &kp LG(D)           &kp LC(PAGE_DOWN)  &kp LS(SPACE)          &kp K_APP        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp GRAVE
+                               &trans              &trans             &trans                 &mo 4            &kp DELETE    &kp N0
             >;
         };
 
