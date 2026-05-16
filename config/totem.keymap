@@ -57,7 +57,8 @@
                 <&macro_release>,
                 <&kp LSHFT>,
                 <&macro_tap>,
-                <&kp G &kp I &kp F>;
+                <&kp G &kp I &kp F>,
+                <&macro_press>;
         };
     };
 
@@ -106,10 +107,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q  &kp W       &kp E                  &kp R        &kp T          &kp Y      &kp U        &kp I         &kp O       &kp P
-        &kp A  &mt LALT S  &mt LCTRL D            &mt LSHFT F  &kp G          &kp H      &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
-&tog 5  &kp Z  &kp X       &kp C                  &kp V        &kp B          &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
-                           &mt LEFT_GUI CAPSLOCK  &lt 1 TAB    &lt 2 SPACE    &lt 3 RET  &kp BSPC     &kp LEFT_ALT
+        &kp Q  &kp W       &kp E                 &kp R        &kp T          &kp Y      &kp U        &kp I         &kp O       &kp P
+        &kp A  &mt LALT S  &mt LCTRL D           &mt LSHFT F  &kp G          &kp H      &mt RSHFT J  &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
+&tog 5  &kp Z  &kp X       &kp C                 &kp V        &kp B          &kp N      &kp M        &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
+                           &mt CAPSLOCK LS(TAB)  &lt 2 TAB    &lt 1 SPACE    &lt 3 RET  &kp BSPC     &kp LEFT_ALT
+            >;
+        };
+
+        num_layer {
+            label = "NUM";
+            bindings = <
+           &kp EQUAL      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N9          &kp PRINTSCREEN     &kp HOME        &kp INSERT    &kp END          &kp C_VOLUME_UP
+           &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_6    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
+&kp GRAVE  &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0          &kp K_CONTEXT_MENU  &kp PAGE_UP     &kp LC(Z)     &kp PAGE_DOWN    &kp C_MUTE         &kp RA(F4)
+                                        &kp NUMBER_0  &trans        &trans          &mo 4               &kp DELETE      &kp ESCAPE
             >;
         };
 
@@ -130,20 +141,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &kp LC(PLUS)     &kp LG(TAB)         &kp LC(MINUS)      &kp LC(SPACE)          &kp PRINTSCREEN  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
-       &none  &kp LG(LEFT)     &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)   &kp LG(RIGHT_ARROW)    &none            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
-&none  &none  &kp LC(PAGE_UP)  &kp LG(D)           &kp LC(PAGE_DOWN)  &kp LS(SPACE)          &kp K_APP        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp GRAVE
-                               &trans              &trans             &trans                 &mo 4            &kp DELETE    &kp N0
-            >;
-        };
-
-        num_layer {
-            label = "NUM";
-            bindings = <
-           &kp EQUAL      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &braces      &kp PRINTSCREEN     &kp HOME        &kp INSERT    &kp END          &kp C_VOLUME_UP
-           &kp MINUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &brackets    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
-&kp GRAVE  &kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &partness    &kp K_CONTEXT_MENU  &kp PAGE_DOWN   &kp CAPSLOCK  &kp PAGE_UP      &kp C_MUTE         &kp RA(F4)
-                                        &kp NUMBER_0  &trans        &trans       &mo 4               &kp DELETE      &kp ESCAPE
+       &kp LC(C)   &kp LC(PLUS)       &kp LG(TAB)  &kp LC(MINUS)    &kp LC(SPACE)          &kp PRINTSCREEN  &kp N7        &kp N8        &kp N9        &kp KP_PLUS
+       &kp DELETE  &kp LG(LEFT)       &kp LG(UP)   &kp LG(DOWN)     &kp LG(RIGHT_ARROW)    &none            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MINUS
+&none  &kp LC(V)   &kp LC(PAGE_DOWN)  &kp LG(D)    &kp LC(PAGE_UP)  &kp LS(SPACE)          &kp K_APP        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH  &kp GRAVE
+                                      &trans       &trans           &trans                 &mo 4            &kp DELETE    &kp N0
             >;
         };
 
@@ -152,7 +153,7 @@
             bindings = <
            &kp PLUS        &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &braces      &trans          &msc SCRL_LEFT  &mkp LCLK     &msc SCRL_RIGHT  &kp C_VOLUME_UP
            &kp UNDERSCORE  &kp DOLLAR       &kp PERCENT            &kp CARET             &brackets    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp C_VOLUME_DOWN
-&kp TILDE  &kp PIPE        &kp EXCLAMATION  &kp AT_SIGN            &kp HASH              &partness    &trans          &msc SCRL_DOWN  &mkp RCLK     &msc SCRL_UP     &kp C_MUTE         &kp RA(F4)
+&kp TILDE  &kp PIPE        &kp EXCLAMATION  &kp AT_SIGN            &kp HASH              &partness    &trans          &msc SCRL_UP    &mkp RCLK     &msc SCRL_DOWN   &kp C_MUTE         &kp RA(F4)
                                             &kp RIGHT_PARENTHESIS  &trans                &mo 4        &trans          &kp DELETE      &kp ESCAPE
             >;
         };
@@ -174,9 +175,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &sys_reset    &trans        &out OUT_TOG  &trans        &trans            &trans          &kp F7  &kp F8  &kp F9  &kp F12
-              &bootloader   &trans        &trans        &trans        &bt BT_CLR        &trans          &kp F4  &kp F5  &kp F6  &kp F11
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+              &sys_reset    &trans        &out OUT_TOG  &trans        &trans            &sk LEFT_SHIFT  &kp F7  &kp F8  &kp F9  &kp F12
+              &bootloader   &trans        &trans        &trans        &bt BT_CLR        &sk LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR_ALL    &sk LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F10  &none
                                           &trans        &trans        &trans            &trans          &trans  &trans
             >;
         };
