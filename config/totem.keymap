@@ -123,7 +123,7 @@
         &kp Q  &kp W       &kp E                 &kp R        &kp T          &kp Y      &kp U            &kp I         &kp O       &kp P
         &kp A  &mt LALT S  &mt LCTRL D           &mt LSHFT F  &kp G          &kp H      &mt RSHFT J      &mt RCTRL K   &mt RALT L  &mt RGUI SEMI
 &tog 5  &kp Z  &kp X       &kp C                 &kp V        &kp B          &kp N      &kp M            &kp COMMA     &kp DOT     &kp SLASH      &kp APOS
-                           &mt CAPSLOCK LS(TAB)  &lt 2 TAB    &lt 1 SPACE    &lt 3 RET  &lt 7 BACKSPACE  &kp LEFT_ALT
+                           &mt CAPSLOCK LS(TAB)  &lt 2 TAB    &lt 1 SPACE    &lt 7 RET  &lt 3 BACKSPACE  &kp LEFT_ALT
             >;
         };
 
