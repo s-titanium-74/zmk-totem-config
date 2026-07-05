@@ -216,10 +216,10 @@
         right_hand_layer {
             label = "RIGHT HAND";
             bindings = <
-           &kp PLUS        &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &braces      &kp TAB      &kp K_BACK   &kp LC(PAGE_UP)    &kp K_NEXT       &kp C_VOLUME_UP
-           &kp UNDERSCORE  &kp DOLLAR       &kp PERCENT            &kp CARET             &brackets    &kp LEFT     &kp DOWN     &kp UP_ARROW       &kp RIGHT_ARROW  &kp C_VOLUME_DOWN
-&kp TILDE  &kp PIPE        &kp EXCLAMATION  &kp AT_SIGN            &kp HASH              &partness    &kp LS(TAB)  &kp PAGE_UP  &kp LC(PAGE_DOWN)  &kp PAGE_DOWN    &kp C_MUTE         &kp RA(F4)
-                                            &kp RIGHT_PARENTHESIS  &trans                &mo 4        &trans       &none        &kp ESCAPE
+           &kp PLUS        &kp AMPERSAND    &kp ASTERISK           &kp LEFT_PARENTHESIS  &braces      &kp TAB      &kp LC(PG_UP)  &kp LA(TAB)      &kp LC(PAGE_DOWN)  &kp C_VOLUME_UP
+           &kp UNDERSCORE  &kp DOLLAR       &kp PERCENT            &kp CARET             &brackets    &kp LEFT     &kp DOWN       &kp UP_ARROW     &kp RIGHT_ARROW    &kp C_VOLUME_DOWN
+&kp TILDE  &kp PIPE        &kp EXCLAMATION  &kp AT_SIGN            &kp HASH              &partness    &kp LS(TAB)  &kp PAGE_UP    &kp LA(LS(TAB))  &kp PAGE_DOWN      &kp C_MUTE         &kp RA(F4)
+                                            &kp RIGHT_PARENTHESIS  &trans                &mo 4        &trans       &none          &kp ESCAPE
             >;
         };
     };
